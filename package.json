@@ -1,0 +1,24 @@
+{
+  "name": "teammembergen",
+  "version": "1.0.0",
+  "description": "```md\r AS A manager\r I WANT to generate a webpage that displays my team's basic info\r SO THAT I have quick access to their emails and GitHub profiles\r ```",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brandonrich1/teamMemberGen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brandonrich1/teamMemberGen/issues"
+  },
+  "homepage": "https://github.com/Brandonrich1/teamMemberGen#readme"
+}

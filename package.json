@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Brandonrich1/teamMemberGen/issues"
   },
-  "homepage": "https://github.com/Brandonrich1/teamMemberGen#readme"
+  "homepage": "https://github.com/Brandonrich1/teamMemberGen#readme",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  }
 }

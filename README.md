@@ -1,5 +1,16 @@
 # teamMemberGen
-### This is a Team Member generator made with node.js for my Coding Boot Camp.
+### This is a Team Member generator using Object Oriented Programming (OOP) for my Coding Boot Camp.
+### The main idea was to build a command line application using Node.js that takes information about employees, engineers. interns, managers.
+### once the fields are entered in the command line application they are then used to generate a HTML that has the employees with their own dedicated card showcasing the information they input to the Command-Line Application.
+
+## Table of Contents
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Video Walkthough Link](#video-walkthough-link)
+- [Screenshots](#screenshots)
+
+
+
 
 ## User Story
 
@@ -30,4 +41,10 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
-## My Deployed Site:
+## Video Walkthough Link
+My video walkthough. VIDEO MAY NEED TO BE DOWNLOADED IN ORDER TO BE VIEWED.
+### [https://drive.google.com/file/d/1XlpHhtnLtEtRJFKDsZ7wUGt-S1BQ_7xG/view](https://drive.google.com/file/d/1XlpHhtnLtEtRJFKDsZ7wUGt-S1BQ_7xG/view)
+
+
+
+## Screenshots

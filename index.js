@@ -1,7 +1,7 @@
 //initilize all requirements.
-const manager = require("./lib/manager.js");
-const engineer = require("./lib/engineer.js");
-const intern =require("./lib/intern.js");
+const Manager = require("./lib/manager.js");
+const Engineer = require("./lib/engineer.js");
+const Intern =require("./lib/intern.js");
 const inquirer= require("inquirer");
 const path = require("path");
 const fs = require ("fs");
@@ -45,17 +45,17 @@ function addManager(){
     },
     {
         type: "input",
-        name: "manangerEmail",
+        name: "managerEmail",
         message: "Manager's Email Address:",
     },
     {
         type: "input",
-        name: "manangerOfficeNumber",
-        message: "Mananger's office #:",
+        name: "managerOfficeNumber",
+        message: "manager's office #:",
     },
 ]).then(answers => {
-    const mananger = new manager(answers.manangerName, answers.manangerId, answers.manangerEmail, answers.manangerOfficeNumber);
-    teamArray.push(mananger);
+    const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
+    teamArray.push(manager);
     createTeam();
 });
 }
@@ -82,7 +82,7 @@ function addEngineer(){
         message: "Engineer's Githib profile name:",
     },
 ]).then(answers => {
-    const createdEngineer = new engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
+    const createdEngineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
     teamArray.push(createdEngineer);
     createTeam();
 });
@@ -110,7 +110,7 @@ function addIntern(){
         message: "School's intern has attended:",
     },
 ]).then(answers => {
-    const createdIntern = new intern (answers.internName, answers.internId, answers.internEmail, answers.internSchool);
+    const createdIntern = new Intern (answers.internName, answers.internId, answers.internEmail, answers.internSchool);
     teamArray.push(createdIntern);
     createTeam();
 });
@@ -118,7 +118,7 @@ function addIntern(){
 
 function htmlBuilder(){
     console.log("Team Created!")
-    fs.writeFileSync(outputPath, generateTeam(teamArray), "utf-8")
+    fs.writeFileSync("./index.html", generateTeam(teamArray), "utf-8")
 }
 createTeam();
 
